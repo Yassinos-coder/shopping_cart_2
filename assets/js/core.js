@@ -74,4 +74,20 @@ function promocheck() {
     } else {
         alert('Coupon code already used \n Good luck next time !')
     }
+    return new_total
+}
+
+/* Select */
+function checkout() {
+    const ttc_price = document.getElementById('ttc2')
+    var new_total = Number(ttc_price.textContent)
+    var selectShipping = document.getElementById('option').options
+    if (selectShipping[2]) {
+        total_after_fees = new_total + 10
+        ttc_price.innerHTML = total_after_fees
+    }
+    if (selectShipping[3]) {
+        total_after_fees = new_total + 50
+        ttc_price.innerHTML = total_after_fees
+    }
 }
