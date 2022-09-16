@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <div id="pageTitle">
+        <h1>Shopping Cart</h1>
+        <div class="search_sec">
+            <input type="search" class="search_sec" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+        </div>
+    </div>
+    <div id="sideBar">
+        <h2 id="sum_items">Order Summary</h2>
+        <hr id="hr2">
+        <p id="items_counter">Items selected for checkout |
+            <p id="items_count">3</p>
+        </p>
+        <h3 id="ttc"></h3>
+        <div id="shipping_sec">
+            <h2>Shipping</h2>
+            <select id="option">
+                <option>Select a shipping mode</option>
+                <option>Normal Shipping FEE:Free</option>
+                <option>Extra Shipping FEE:+10$</option>
+                <option>Priority Shipping FEE:+50$</option>
+            </select>
+        </div>
+        <hr id="hr4">
+        <h2 id="code_promo">Coupon Code</h2>
+        <input id="coupon_input" class="input" type="text" placeholder="Enter coupon code">
+        <button id="apply_btn" type="button" onclick="promocheck()">Apply</button>
+        <hr id="hr3">
+        <h2 id="total">Total</h2>
+        <p id="ttc2">2499.97</p>
+        <p id="currency">$</p>
+        <button class="btn_checkout">Checkout</button>
+    </div>
+    <div id="main">
+        <table id="tableMain">
+            <tbody>
+                <tr width="100%">
+                    <td>
+                        <div class="tb_row">
+                            <div class="famycss_parent">
+                                <button name="button" class="famycss">
+                                    <i id="hearts" class="fa fa-2x famycss fa-heart" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <img class="product_img" src="./assets/img/product1.png" alt="Iphone">
+                            <p class="product_type">Smartphones | Iphone</p>
+                            <p class="product_name">Iphone 14 Pro Max 512GB 8GB RAM 5000MAH GOLD</p>
+                            <div class="Quantity_interactions">
+                                <button class="minus">-</button>
+                                <p class="Quantity">1</p>
+                                <button class="add">+</button>
+                            </div>
+                            <p id="price" class="prices"> 1999.99 </p>
+                            <hr>
+                        </div>
+                    </td>
+                </tr>
+                <tr width="100%">
+                    <td>
+                        <div class="tb_row">
+                            <div class="famycss_parent">
+                                <button name="button" class="famycss">
+                                    <i id="hearts" class="fa fa-2x famycss fa-heart" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <img class="product_img" src="./assets/img/case.png" alt="Iphone">
+                            <p class="product_type">Accessories | Cases & Protection</p>
+                            <p class="product_name">Case Iphone 14 Pro Max Matte Black</p>
+                            <div class="Quantity_interactions">
+                                <button class="minus">-</button>
+                                <p class="Quantity">1</p>
+                                <button class="add">+</button>
+                            </div>
+                            <p class="prices">99.99</p>
+
+                            <hr>
+                        </div>
+                    </td>
+
+                </tr>
+                <tr width="100%">
+                    <td>
+                        <div class="tb_row">
+                            <div class="famycss_parent">
+                                <button name="button" class="famycss">
+                                    <i id="hearts" class="fa fa-2x famycss fa-heart" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <img class="product_img" src="./assets/img/product3.png" alt="wireless">
+                            <p class="product_type">Accessories | Wireless Chargers</p>
+                            <p class="product_name">Iphone Procducts Wireless Charger Hub</p>
+                            <div class="Quantity_interactions">
+                                <button class="minus">-</button>
+                                <p class="Quantity">1</p>
+                                <button class="add">+</button>
+                            </div>
+                            <p class="prices">399.99</p>
+                            <hr>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="./assets/js/core.js"></script>
+    <script src="https://use.fontawesome.com/9d446168c7.js"></script>
+
+</body>
+
+</html>
